@@ -1,11 +1,13 @@
 ### This can help export your Rdio collection into Spotify saved tracks
 
-**This is entirely crummy, "works for me"-style code. It may work for you,
-but it probably won't. Please don't use this unless you're willing to do
-some serious debugging and fooling around. If it breaks, I probably can't
-help you, sorry.**
+**This is forked from [jacobian](https://github.com/jacobian/rdio2spotify) -- thanks @jacobian!**
 
-Still want to play?
+### What I did:
+
+- removed the image part of the script
+- doesn't ask for info on missing albums / artists
+- edited it so it doesn't ask for any user input at all, just runs automatically
+- doesn't skip albums with less than 5 songs
 
 ### OK, here's how I did this:
 
@@ -13,7 +15,6 @@ First, you need the same kit as I have:
 
 - Chrome
 - Python 2.7 (probably works with other versions, haven't tried).
-- [iTerm2 beta version](https://www.iterm2.com/downloads.html) (this is how I did images. you can probably rip this out without much trouble if you don't want to use iTerm2)
 - Rdio and Spotify accounts, natch.
 
 Then:
@@ -40,4 +41,3 @@ Lots, I'm sure. Here are the ones I know of:
 
 - Doesn't do playlists. See http://soundiiz.com/.
 
-- Skips albums with less than 5 tracks saved in Rdio. Tweak on line 38 if `r2s.py` if you like.
